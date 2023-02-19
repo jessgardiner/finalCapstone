@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+# HANGMAN
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**This is a single-player game to guess a random word correctly by guessing letters.**
 
-## Available Scripts
+## CONTENTS:
 
-In the project directory, you can run:
+1. INSTALLATION
+2. USAGE
 
-### `npm start`
+   2.1. HOW TO PLAY
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+   2.2. HOW TO WIN
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 1. INSTALLATION
 
-### `npm test`
+1. Open the command line prompt.
+2. Type cd (change directory) and then navigate to or paste the file path to the Hangman folder. Ensure the path name for the folder is where the package.json file is located. Press enter to change to this directory.
+3. Type 'npm install' (no quotation marks) and then press enter
+4. Once it has finished installing, type 'npm start' into the command line.
+5. A tab should then open in your browser (may take up to a minute or so) and you can then start the game.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 2. USAGE
 
-### `npm run build`
+### 2.1. HOW TO PLAY
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Click on any letter button to start guessing a letter and start the game. It should look like this:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+  ![Screenshot of start of game](docs/screenshots/start-game.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- If you want to choose a different word to guess (e.g. it's too long), click 'Change word'.
 
-### `npm run eject`
+- The word to be guessed is displayed above the keyboard. Its letters are represented with underscores at the start of the game or if not yet guessed correctly.
+- If you make a correct guess, the correct letter(s) are revealed in the word display. The number of guesses remaining will stay the same. Here is an example of a correct guess:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![Screenshot of a letter guessed correctly](docs/screenshots/guess-letter.png)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Dashes or spaces do not need to be guessed and are already visible in the word display.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- However, every time you make an incorrect guess, you are one step closer to the man being hanged! You will notice your 'incorrect guesses remaining' count go down. See the following screenshots of the game in action:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+  ![Screenshot of a letters being guessed](docs/screenshots/guess-letter-incorrect.png)
 
-## Learn More
+### 2.2. HOW TO WIN
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Win by guessing all the letters in the word within 9 or less incorrect guesses.
+- When you have guessed the whole word, the game will end and you will see a 'You won!' message:
+  ![Screenshot of game won](docs/screenshots/you-won.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- If you didn't guess the word within the number of incorrect guesses allowed, you will see a 'You lose' message and the correct answer:
 
-### Code Splitting
+  ![Screenshot of game lost](docs/screenshots/you-lost.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Once the game has ended, click 'Restart game' to play again.
+- Click Help to read through instructions and rules.

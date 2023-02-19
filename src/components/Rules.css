@@ -1,0 +1,9 @@
+/* Positions the text on the rules page */
+.rules {
+    text-align: left;
+}
+
+/* Positions the 'back' button */
+.rules header {
+    text-align: center;
+}

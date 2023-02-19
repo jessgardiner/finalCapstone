@@ -1,38 +1,51 @@
+/* Styles the whole page */
 .App {
   text-align: center;
+  margin: 2vw;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Styles the 'Hangman' heading */
+h1{
+  font-family: courier;
+  color: #5c24c5;
+  margin-bottom: 6vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Sets to bold */
+.bold{
+  font-weight: bold;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Styles the display of the guessed word */
+.guessedWord{
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top: 5vh;
+}
+
+/* Puts the image and information menu into a flexbox, with image on left and information on the right */
+.topSection{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-left:26%;
+  column-gap: 15%;
+
+}
+
+/* Styles the hangman image */
+img{
+  width: 179px;
+}
+
+/* Styles the buttons to look nice */
+button.btn {
+  font-size: 1rem;
+  font-family: sans-serif;
+  padding: 10px;
+  border: none;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  background-color: #7361f2;
+  border-radius: 6px;
+  margin: 4px;
+  min-width: 155px;
+  text-align: center;
 }

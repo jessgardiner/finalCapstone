@@ -1,0 +1,60 @@
+/* Styles the whole info menu on the right hand side of the page, 
+which is contained within the flex box  */
+.infoMenu{
+    text-align: right;
+}
+
+/* Makes the keyboard key background green if correct */
+.won{
+    color: rgb(5, 199, 5);
+    font-size: 1.5rem;
+}
+
+/* Makes the keyboard key background red if 
+incorrectly guessed */
+.lost{
+    color: rgb(255, 5, 5);
+    font-size: 1.5rem;
+}
+
+/* Hides the <div> element when no letters have been 
+guessed yet */
+.hide {
+    display: none;
+}
+
+/* Styles the message to encourage player to press a letter 
+to start guessing */
+.startGuessing{
+    color: #6d38d0;
+    font-size: 1.5rem;
+    display:inline-block;
+}
+/* Styles the <p> element that displays the correct answer */
+.lostAnswer{
+    font-size: 1.5rem;
+}
+
+/* Puts the 'restart game/change word' button and 'Help' 
+anchor in flex box */
+.restartHelpContainer{
+    display: flex;
+    flex-direction: column;
+    /* Aligns the buttons to the right */
+    width: auto;
+    align-items: end;
+    margin-top: 3vh;
+}
+
+/* Puts a lavender-coloured box around incorrect 
+guesses/ guesses remaining */
+.guessesDisplay {
+    border: 1px lavender solid;
+    padding: 0 2vw;
+    background-color: lavender;
+}
+
+/* General class to remove top margin */
+.removeTopMargin {
+    margin-top: 0;
+}

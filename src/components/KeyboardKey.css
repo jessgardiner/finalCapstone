@@ -1,0 +1,16 @@
+/* Changes the background colour of keyboard key to light green if correctly guessed */
+.keyboardContainer button.correct{
+    background-color: #7ad97a;
+    
+}
+
+/* Changes the background colour of keyboard key to light red if incorrectly guessed */
+.keyboardContainer button.incorrect{
+    background-color:  #e88080;
+}
+
+
+/* Overrides the default text transparency to black when button is set to disabled */
+button:disabled {
+    color: black;
+}
